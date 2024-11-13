@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Yosselin Rios">
+    <meta name="author" content="Yosselin Rios" />
     <meta
-       name="description" content="Un ejemplo de como debería estar mi practica final."  
-    >
-    <meta name="keywords"
-       content="HTML, etiquetas semanticas, proyecto"
-    >
+      name="description"
+      content="Un ejemplo de como debería estar mi practica final."
+    />
+    <meta name="keywords" content="HTML, etiquetas semanticas, proyecto" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <title>Ejemplo</title>
   </head>
   <body>
@@ -17,10 +20,10 @@
       <h1>Mi Blog Personal</h1>
       <nav>
         <ul>
-          <li><a href="#">Sobre Mi</a></li>
-          <li><a href="#">Intereses</a></li>
-          <li><a href="#">Enlaces</a></li>
-          <li><a href="#Contacto">Contacto</a></li>
+          <li><a href="#"><span class="material-icons">home</span>Sobre Mi</a></li>
+          <li><a href="#"><span class="material-icons">favorite</span>Intereses</a></li>
+          <li><a href="#"><span class="material-icons">link</span>Enlaces</a></li>
+          <li><a href="#Contacto"><span class="material-icons">contact_mail</span>Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -97,7 +100,7 @@
             <input type="checkbox" name="escribir" id="intereses-escribir" />
           </fieldset>
 
-          <button type="submit">Enviar</button>
+          <button type="submit">Enviar<span class="material-icons">send</span></button>
         </form>
       </section>
     </main>
