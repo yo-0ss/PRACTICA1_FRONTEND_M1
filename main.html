@@ -7,7 +7,7 @@
   </head>
   <body>
     <header>
-      <h1>Mi Primer Sitio WEB</h1>
+      <h1>Mi Blog Personal</h1>
       <nav>
         <ul>
           <li><a href="#">Sobre Mi</a></li>
@@ -17,5 +17,78 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <section id="Contacto">
+        <h2>Formulario de Contacto</h2>
+        <p>Completa el formulario para contactarme:</p>
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            id="nombre"
+            placeholder="Escribe tu nombre"
+            required
+          />
+
+          <label for="email">Correo electrónico:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="ejemplo@correo.com"
+            required
+          />
+
+          <label for="asunto">Asunto:</label>
+          <select id="asunto" required>
+            <option>Consulta</option>
+            <option>Sugerencia</option>
+            <option>Queja</option>
+            <option>Otro</option>
+          </select>
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea
+            id="mensaje"
+            rows="2"
+            placeholder="Escribe tu mensaje aquí..."
+            required
+          >
+          </textarea>
+          <fieldset>
+            <legend>Género</legend>
+
+            <label for="genero-masculino">Masculino</label>
+            <input type="radio" name="genero" id="genero-masculino" />
+
+            <label for="genero-femenino">Femenino</label>
+            <input type="radio" name="genero" id="genero-femenino" />
+
+            <label for="genero-otro">Otro</label>
+            <input type="radio" name="genero" id="genero-otro" />
+          </fieldset>
+
+          <fieldset>
+            <legend>Intereses</legend>
+            <label for="intereses-musica">Musica</label>
+            <input type="checkbox" name="musica" id="intereses-musica" />
+
+            <label for="intereses-programacion">Programación</label>
+            <input type="checkbox" name="programacion" id="intereses-programacion" />
+
+            <label for="intereses-videojuegos">Videojuegos</label>
+            <input
+              type="checkbox"
+              name="videojuegos"
+              id="intereses-videojuegos"
+            />
+
+            <label for="intereses-escribir">Escribir</label>
+            <input type="checkbox" name="escribir" id="intereses-escribir" />
+          </fieldset>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
